@@ -1,13 +1,13 @@
-package com.buntuconecta.buntuconecta;
+package com.grupo6.buntuconectapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BuntuconectaApplicationTests {
+class BuntuconectappApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
