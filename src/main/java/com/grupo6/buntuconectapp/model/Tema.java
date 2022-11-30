@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.util.List;
+
 
 @Entity
 @Table(name = "tb_tema")
@@ -26,11 +26,6 @@ public class Tema {
     @Size(min = 4, max = 20, message = "O nome do tema deve conter de 4 a 20 caracteres ")
     @NotBlank(message = "O Nome é obrigatorio !")
     private String nome;
-
-
-    @OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
-    @JsonIgnoreProperties("Tema")
-    private List<Postagem> postagem;
 
 
     public Long getId() {
@@ -55,13 +50,5 @@ public class Tema {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public List<Postagem> getPostagem() {
-        return postagem;
-    }
-
-    public void setPostagem(List<Postagem> postagem) {
-        this.postagem = postagem;
     }
 }

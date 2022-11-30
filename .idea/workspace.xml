@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4ee1e02-ea1c-4606-ab96-cffe0b9eee4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/controller/TemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/controller/TemaController.java" afterDir="false" />
-    </list>
+    <list default="true" id="a4ee1e02-ea1c-4606-ab96-cffe0b9eee4e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +60,8 @@
       <workItem from="1669826521332" duration="2460000" />
       <workItem from="1669829060935" duration="2085000" />
       <workItem from="1669831622692" duration="88000" />
+      <workItem from="1669836567898" duration="2261000" />
+      <workItem from="1669841569060" duration="282000" />
     </task>
     <servers />
   </component>
