@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ee1e02-ea1c-4606-ab96-cffe0b9eee4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projeto_Integrador6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projeto_Integrador6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/controller/TemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/controller/TemaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/repository/TemaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grupo6/buntuconectapp/repository/TemaRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +38,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,6 +60,9 @@
       <workItem from="1669816435621" duration="1411000" />
       <workItem from="1669818449748" duration="825000" />
       <workItem from="1669819338234" duration="1008000" />
+      <workItem from="1669826137195" duration="368000" />
+      <workItem from="1669826521332" duration="2460000" />
+      <workItem from="1669829060935" duration="2085000" />
     </task>
     <servers />
   </component>
