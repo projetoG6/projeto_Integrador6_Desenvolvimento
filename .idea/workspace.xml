@@ -34,15 +34,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,6 +57,7 @@
       <workItem from="1669660238730" duration="38000" />
       <workItem from="1669666435110" duration="149000" />
       <workItem from="1669667557122" duration="143000" />
+      <workItem from="1669816435621" duration="1411000" />
     </task>
     <servers />
   </component>
