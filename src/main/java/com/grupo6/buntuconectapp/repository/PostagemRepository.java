@@ -12,6 +12,8 @@ import java.util.List;
 @Repository
 public interface PostagemRepository extends JpaRepository<Postagem, Long> {
 
+
+
     public List<Postagem> findAllByTituloContainingIgnoreCase(String titulo);
 
     // public List<Postagem>findByDataDataInicialAndDataFinal(LocalDateTime data)
