@@ -51,17 +51,6 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BuntuconectappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="projeto_Integrador6" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.grupo6.buntuconectapp.BuntuconectappApplication" />
@@ -94,6 +83,7 @@
       <workItem from="1669907075772" duration="3117000" />
       <workItem from="1669910815968" duration="16000" />
       <workItem from="1669910858005" duration="2339000" />
+      <workItem from="1669919867915" duration="336000" />
     </task>
     <servers />
   </component>

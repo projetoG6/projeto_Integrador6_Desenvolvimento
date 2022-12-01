@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 
 @Entity
@@ -27,6 +28,9 @@ public class Tema {
     @NotBlank(message = "O Nome é obrigatorio !")
     private String nome;
 
+    @OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
+    @JsonIgnoreProperties("tema")
+    private List<Postagem> postagem;
 
     public Long getId() {
         return id;
@@ -50,5 +54,13 @@ public class Tema {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public List<Postagem> getPostagem() {
+        return postagem;
+    }
+
+    public void setPostagem(List<Postagem> postagem) {
+        this.postagem = postagem;
     }
 }

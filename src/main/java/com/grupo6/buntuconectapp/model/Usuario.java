@@ -6,10 +6,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Entity
 @Table(name= "tb_usuarios")
-public class Usuarios {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,9 +31,18 @@ public class Usuarios {
     private String foto;
 
 
-    @OneToMany
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties("usuario")
-    public Postagem postagem;
+    private List<Postagem> postagem;
+
+    public Usuario(Long id, @NotBlank(message = "Campo nome é obrigatorio !") @Size(min = 4, max = 50, message = "O Campo nome deve conter no minimo 4 caracteres e no maximo 50.") String nome, @NotBlank(message = "Digite seu e-mail !") String usuario, @NotBlank(message = "O campo senha nao pode estar vazio!") @Size(min = 8, max = 255, message = "A senha precisa conter no minimo 8 caracteres !") String senha, String foto) {
+        this.id = id;
+        this.nome = nome;
+        this.usuario = usuario;
+        this.senha = senha;
+        this.foto = foto;
+    }
+    public Usuario() { }
 
     public Long getId() {
         return id;
@@ -40,6 +50,14 @@ public class Usuarios {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getUsuario() {
@@ -66,19 +84,11 @@ public class Usuarios {
         this.foto = foto;
     }
 
-    public Postagem getPostagem() {
+    public List<Postagem> getPostagem() {
         return postagem;
     }
 
-    public void setPostagem(Postagem postagem) {
+    public void setPostagem(List<Postagem> postagem) {
         this.postagem = postagem;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 }
