@@ -11,19 +11,22 @@ import javax.validation.constraints.Size;
 @Table(name = "tb_temas")
 public class Tema {
 
-    @Id
+    @Id // ID DA TABELA TEMA
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // CLASSE DO TIPO ID QUE IDENTIFICA UM DADO NO MEU BANCO
 
 
     @Size(min = 1, max = 100, message = "A descricao precisa conter de 1 a 100 caracteres.")
-    private String descricao;
+    private String descricao; // CLASSE DO TIPO STRING(TEXTO) COM DE DESCRICAO PARA GUARDAR DADOS DE TEXTO.
 
 
     @Size(min = 4, max = 20, message = "O nome do tema deve conter de 4 a 20 caracteres ")
     @NotBlank(message = "O Nome é obrigatorio !")
-    private String nome;
+    private String nome; // CLASSE DO TIPO STRING NOME PARA ARMAZENAR O NOME NO ATRIBUTO TEXTO.
 
+
+
+    // GETTER AND SETTERS
 
     public Long getId() {
         return id;
