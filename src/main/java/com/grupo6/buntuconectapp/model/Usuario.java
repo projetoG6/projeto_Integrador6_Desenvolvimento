@@ -35,15 +35,6 @@ public class Usuario {
     @JsonIgnoreProperties("usuario")
     private List<Postagem> postagem;
 
-    public Usuario(Long id, @NotBlank(message = "Campo nome é obrigatorio !") @Size(min = 4, max = 50, message = "O Campo nome deve conter no minimo 4 caracteres e no maximo 50.") String nome, @NotBlank(message = "Digite seu e-mail !") String usuario, @NotBlank(message = "O campo senha nao pode estar vazio!") @Size(min = 8, max = 255, message = "A senha precisa conter no minimo 8 caracteres !") String senha, String foto) {
-        this.id = id;
-        this.nome = nome;
-        this.usuario = usuario;
-        this.senha = senha;
-        this.foto = foto;
-    }
-    public Usuario() { }
-
     public Long getId() {
         return id;
     }
