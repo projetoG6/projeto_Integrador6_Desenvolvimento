@@ -95,6 +95,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -151,7 +152,7 @@
       <workItem from="1670944287563" duration="136000" />
       <workItem from="1670944454604" duration="1061000" />
       <workItem from="1670947918673" duration="74000" />
-      <workItem from="1670948032942" duration="3362000" />
+      <workItem from="1670948032942" duration="3732000" />
     </task>
     <servers />
   </component>
