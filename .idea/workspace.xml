@@ -102,17 +102,6 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BuntuconectappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="projeto_Integrador6" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.grupo6.buntuconectapp.BuntuconectappApplication" />
@@ -155,6 +144,7 @@
       <workItem from="1670948032942" duration="4976000" />
       <workItem from="1670953173246" duration="893000" />
       <workItem from="1670954922291" duration="389000" />
+      <workItem from="1670955742620" duration="92000" />
     </task>
     <servers />
   </component>
