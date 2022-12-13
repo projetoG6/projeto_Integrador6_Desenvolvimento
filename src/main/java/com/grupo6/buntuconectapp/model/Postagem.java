@@ -1,6 +1,5 @@
 package com.grupo6.buntuconectapp.model;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -10,25 +9,23 @@ import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "tb_postagem")
+@Table(name = "tb_postagens")
 public class Postagem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "O titulo é obrigatorio ! ")
-    @Size(min= 4, max = 20, message = "O titulo deve conter de 4 a 20 caracteres !")
-    public String titulo;
+    @NotBlank(message = "O atributo título é Obrigatório!")
+    @Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 05 e no máximo 100 caracteres")
+    private String titulo;
 
-
-    @NotBlank(message = "Nao e possivel enviar uma postagem em branco !")
-    @Size(min= 2 , max = 1000, message = "O conteudo do texto deve conter no minimo 2 caracteres e no maximo 1000.")
-    public String texto;
+    @NotBlank(message = "O atributo texto é Obrigatório!")
+    @Size(min = 10, max = 1000, message = "O atributo texto deve conter no mínimo 10 e no máximo 1000 caracteres")
+    private String texto;
 
     @UpdateTimestamp
-    public LocalDateTime data;
-
+    private LocalDateTime data;
 
     @ManyToOne
     @JsonIgnoreProperties("postagem")
@@ -38,9 +35,10 @@ public class Postagem {
     @JsonIgnoreProperties("postagem")
     private Usuario usuario;
 
+    /*Insira os Getters and Setters*/
 
     public Long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(Long id) {
@@ -48,7 +46,7 @@ public class Postagem {
     }
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public void setTitulo(String titulo) {
@@ -56,7 +54,7 @@ public class Postagem {
     }
 
     public String getTexto() {
-        return texto;
+        return this.texto;
     }
 
     public void setTexto(String texto) {
@@ -64,7 +62,7 @@ public class Postagem {
     }
 
     public LocalDateTime getData() {
-        return data;
+        return this.data;
     }
 
     public void setData(LocalDateTime data) {
@@ -72,18 +70,19 @@ public class Postagem {
     }
 
     public Tema getTema() {
-        return tema;
+        return this.tema;
     }
 
     public void setTema(Tema tema) {
         this.tema = tema;
     }
 
-    public Usuario getUsuarios() {
-        return usuario;
+    public Usuario getUsuario() {
+        return this.usuario;
     }
 
-    public void setUsuarios(Usuario usuario) {
+    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
 }

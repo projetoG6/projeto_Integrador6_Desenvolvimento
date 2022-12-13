@@ -1,14 +1,16 @@
 package com.grupo6.buntuconectapp.repository;
 
+import java.util.List;
+import java.util.Optional;
 import com.grupo6.buntuconectapp.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
-
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
     public Optional<Usuario> findByUsuario(String usuario);
 
-    }
+    public List<Usuario> findAllByNomeContainingIgnoreCase(String nome);
 
+}

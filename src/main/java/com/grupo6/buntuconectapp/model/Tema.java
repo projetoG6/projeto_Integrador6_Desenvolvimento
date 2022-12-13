@@ -1,10 +1,6 @@
 package com.grupo6.buntuconectapp.model;
 
-
-
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
